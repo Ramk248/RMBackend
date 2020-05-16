@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-const serverSupportMail = 'mardroid.apps@gmail.com'
+const serverSupportMail = 'rameshkatke51@gmail.com'
 const serverSupportPassword = process.env.EMAIL_PASSWORD
 
 const transporter = nodemailer.createTransport({
@@ -14,11 +14,11 @@ const transporter = nodemailer.createTransport({
 function sendOptMail(email, otpCode){
   
   var mailOptions = {
-    from: 'mardroid.apps@gmail.com',
+    from: 'rameshkatke51@gmail.com',
     to: email,
-    subject: 'Souq password assistance',
-    text: 'To authenticate, please use the following One Time Password (OTP): \n' + otpCode + '\nDo not share this OTP with anyone.\n Souq takes your account security very seriously.'+
-    '\nSouq will never ask you to disclose or varify your Souq password, OTP, credit card, or banking account number'
+    subject: 'Rojana Mart Password Assistance',
+    text: 'To authenticate, please use the following One Time Password (OTP): \n' + otpCode + '\nDo not share this OTP with anyone.\n We take your account security very seriously.'+
+    '\nRojana Mart will never ask you to disclose or varify your password, OTP, credit card, or banking account number'
   };
   
   
